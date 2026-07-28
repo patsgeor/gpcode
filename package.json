@@ -1,0 +1,24 @@
+{
+  "name": "gpcode-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Στατικό εταιρικό site για το software studio gpcode — HTML5, Bootstrap 5, vanilla JS. Το Node χρησιμοποιείται μόνο κατά το build.",
+  "author": "gpcode — Πατσιαλής Γεώργιος",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "node build/generate.js --prod && node build/optimize.js && node build/check-links.js",
+    "dev": "node build/generate.js && node build/check-links.js",
+    "dist": "node build/generate.js --prod && node build/optimize.js && node build/check-links.js && node build/dist.js",
+    "check": "node build/check-links.js",
+    "serve": "npx --yes http-server . -p 8099 -c-1 -g --brotli --silent",
+    "setup:assets": "node build/setup-assets.js"
+  },
+  "devDependencies": {
+    "@fontsource/inter": "^5.1.0",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.13.1",
+    "clean-css": "^5.3.3",
+    "purgecss": "^7.0.2",
+    "terser": "^5.36.0"
+  }
+}

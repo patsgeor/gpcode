@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "gpcode-static",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["--yes", "http-server", ".", "-p", "8099", "-c-1", "-g", "--brotli", "--silent"],
+      "port": 8099
+    }
+  ]
+}
