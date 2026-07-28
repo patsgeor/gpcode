@@ -1,0 +1,42 @@
+# Εξαρτήσεις — ξαναφτιάχνονται με `npm ci`
+node_modules/
+
+# Έξοδος του `npm run dist` — ξαναφτιάχνεται πλήρως, δεν είναι πηγαίος κώδικας
+dist/
+
+# ----------------------------------------------------------------------------
+# Παραγόμενα assets, από `npm run setup:assets` (build/setup-assets.js).
+# Fonts/εικονίδια/favicon/patterns ξαναφτιάχνονται από node_modules ή
+# procedurally· δεν χρειάζεται να ζουν στο git.
+# ----------------------------------------------------------------------------
+fonts/
+icons/sprite.svg
+favicon/
+css/bootstrap.min.css
+images/og-default.png
+images/pattern-binary.svg
+images/pattern-circuit.svg
+
+# ----------------------------------------------------------------------------
+# Παραγόμενες σελίδες και assets, από `npm run dist` (generate.js/optimize.js).
+# Η πηγή αλήθειας είναι το js/data.js + τα build/*.js — όχι αυτά τα αρχεία.
+# ----------------------------------------------------------------------------
+/*.html
+/services/*.html
+/blog/*.html
+/examples/*.html
+css/app.min.css
+css/demo.min.css
+js/nav.min.js
+js/main.min.js
+js/cookie-consent.min.js
+js/contact.min.js
+sitemap.xml
+sitemap-images.xml
+robots.txt
+manifest.webmanifest
+browserconfig.xml
+
+# Προσυμπιεσμένα αρχεία (--precompress)
+*.gz
+*.br
