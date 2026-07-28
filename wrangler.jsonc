@@ -1,0 +1,13 @@
+{
+  // Assets-only Worker: χωρίς δικό μας worker script (χωρίς "main"), το
+  // wrangler απλώς σερβίρει στατικά αρχεία. Λύνει το "Asset too large" —
+  // χωρίς αυτό το αρχείο, το wrangler δεν ήξερε ποιος φάκελος είναι τα
+  // assets και προσπαθούσε να ανεβάσει ολόκληρο το repo (μαζί με
+  // node_modules).
+  "name": "gpcode",
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}
