@@ -277,7 +277,7 @@ var SITE_DATA = {
     {
       id: 'corporate',
       name: 'Εταιρικό site',
-      priceFrom: 800,
+      priceFrom: 400,
       tagline: 'Πλήρες site με 4–10 σελίδες',
       features: [
         '4–10 σελίδες με δική τους δομή',
@@ -295,7 +295,7 @@ var SITE_DATA = {
     {
       id: 'custom',
       name: 'Site με custom λειτουργικότητα',
-      priceFrom: 2500,
+      priceFrom: 600,
       tagline: 'Όταν χρειάζεστε περισσότερα από σελίδες',
       features: [
         'Πολυγλωσσικό ή πίνακας διαχείρισης',
