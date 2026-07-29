@@ -24,7 +24,7 @@ function initials(name) {
 function demoLayout(o) {
   const d = o.demo;
   const css = PROD ? '../css/demo.min.css' : '../css/demo.css';
-  const tierLabel = d.tier === 'pro' ? 'Landing Page Pro — από 400€' : 'Απλή Landing Page — από 200€';
+  const tierLabel = d.tier === 'pro' ? 'Landing Page Pro — από 300€' : 'Απλή Landing Page — από 200€';
 
   const nav = (o.navLinks || []).map(n =>
     '<a href="#' + n.id + '">' + esc(n.label) + '</a>'
