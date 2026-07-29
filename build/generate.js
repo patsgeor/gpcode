@@ -154,7 +154,7 @@ pages.forEach(p => {
       .replace(/^<script type="application\/ld\+json">/, '')
       .replace(/<\/script>$/, '')
       .replace(/\\u003c/g, '<');
-
+ 
     let parsed;
     try {
       parsed = JSON.parse(raw);
