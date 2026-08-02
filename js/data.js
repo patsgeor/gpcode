@@ -69,7 +69,7 @@ var SITE_DATA = {
     /* Web3Forms: δωρεάν, EU-friendly, χωρίς backend.
        Πάρτε access key από https://web3forms.com και αντικαταστήστε: */
     formEndpoint: 'https://api.web3forms.com/submit',
-    formAccessKey: '{WEB3FORMS_ACCESS_KEY}',
+    formAccessKey: 'a064c06b-762b-4474-a07c-cb45c4436e18',
     /* Περιοχή εξυπηρέτησης — δηλώνεται και στο schema */
     areaLocal: 'Αθήνα',
     areaRemote: 'όλη την Ελλάδα'
