@@ -152,7 +152,7 @@ function contact() {
     '<label class="form-label" for="cf-budget">Ενδεικτικός προϋπολογισμός</label>' +
     '<select class="form-select" id="cf-budget" name="budget">' +
     '<option value="">Προτιμώ να το συζητήσουμε</option>' +
-    ['Έως 1.000€', '1.000€ – 3.000€', '3.000€ – 8.000€', 'Πάνω από 8.000€']
+    ['Κάτω από 500€', '500€ – 2.000€', '2.000€ – 6.000€', 'Πάνω από 6.000€']
       .map(v => '<option value="' + esc(v) + '">' + esc(v) + '</option>').join('') +
     '</select>' +
     '<span class="form-hint">Βοηθά να προτείνω κάτι ρεαλιστικό αντί για κάτι που δεν ' +
