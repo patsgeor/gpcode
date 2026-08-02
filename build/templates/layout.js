@@ -405,11 +405,7 @@ function layout(o) {
        το περιεχόμενο θα έμενε αόρατο. */
     '<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>\n' +
 
-    '\n<!-- ============================================================\n' +
-    '     ΕΠΑΛΗΘΕΥΣΗ GOOGLE SEARCH CONSOLE\n' +
-    '     Αντιγράψτε τον κωδικό από το Search Console, αφαιρέστε το σχόλιο:\n' +
-    '<meta name="google-site-verification" content="{VERIFICATION_CODE}">\n' +
-    '     ============================================================ -->\n' +
+    '<meta name="google-site-verification" content="6nNs4_RrRZJVhavTmr-ov50b7zYAi0oXVNGuQY7neh8">\n' +
 
     (jsonLd ? '\n' + jsonLd + '\n' : '') +
     '</head>\n' +
