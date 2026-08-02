@@ -64,7 +64,7 @@ var SITE_DATA = {
   contact: {
     phone: '+306979605534',
     phoneDisplay: '697 960 5534',
-    email: 'geo.patsialis@gmail.com',   // TODO → info@gpcode.gr
+    email: 'info@gpcode.gr',
     responseHours: 24,
     /* Web3Forms: δωρεάν, EU-friendly, χωρίς backend.
        Πάρτε access key από https://web3forms.com και αντικαταστήστε: */
