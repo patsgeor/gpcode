@@ -86,8 +86,8 @@
 
     if (consent.statistics) {
 
-      /* --- Google Analytics 4 ---------------------------------------
-      var GA4_ID = 'G-XXXXXXXXXX';
+      /* --- Google Analytics 4 --------------------------------------- */
+      var GA4_ID = 'G-QPCHL55W49';
       var gaScript = document.createElement('script');
       gaScript.async = true;
       gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
@@ -97,7 +97,7 @@
       window.gtag = gtag;
       gtag('js', new Date());
       gtag('config', GA4_ID, { anonymize_ip: true });
-      ----------------------------------------------------------------- */
+      /* ---------------------------------------------------------------- */
 
       /* --- Google Tag Manager ----------------------------------------
          Προσοχή: το GTM μπορεί να φορτώσει και εργαλεία μάρκετινγκ.
