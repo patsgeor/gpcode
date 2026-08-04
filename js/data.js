@@ -246,7 +246,7 @@ var SITE_DATA = {
   packages: [
     {
       id: 'landing-basic',
-      name: 'Απλή Landing Page',
+      name: 'Απλή Landing Page — Οικονομική Λύση',
       priceFrom: 200,
       tagline: 'Για να διαφημίσετε τις υπηρεσίες σας',
       features: [
