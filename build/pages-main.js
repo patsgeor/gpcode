@@ -56,16 +56,13 @@ function home() {
     C.serviceCards(b) +
     '</div></section>' +
 
-    /* 3. ΤΕΧΝΟΛΟΓΙΕΣ */
-    '<section class="section section-subtle"><div class="container">' +
-    C.sectionHead('Τεχνολογίες', 'Τι χρησιμοποιώ και γιατί',
-      'Κάθε επιλογή τεχνολογίας έχει λόγο. Παρακάτω είναι ο λόγος για την καθεμία — ' +
-      'όχι μια λίστα λογοτύπων.', { center: true }) +
-    C.techStack() +
-    '</div></section>' +
+    /* Η στοίβα τεχνολογιών ζει ήδη στα hero chips (γρήγορη σάρωση) και σε
+       πλήρη ανάλυση στο about.html + στις σελίδες υπηρεσιών — μια τρίτη
+       επανάληψη εδώ ήταν καθαρή αντιγραφή, αφαιρέθηκε για λιγότερη πυκνότητα
+       πληροφορίας στην αρχική. */
 
-    /* 4. ΓΙΑΤΙ gpcode */
-    '<section class="section"><div class="container">' +
+    /* 3. ΓΙΑΤΙ gpcode */
+    '<section class="section section-subtle"><div class="container">' +
     C.sectionHead('Γιατί gpcode', 'Τι σας δίνει ένα μικρό studio',
       'Και τι σας κοστίζει. Και τα δύο, γραπτώς.', { center: true }) +
     '<div class="row g-3">' +
@@ -81,15 +78,15 @@ function home() {
     ).join('') +
     '</div></div></section>' +
 
-    /* 5. ΔΙΑΔΙΚΑΣΙΑ */
-    '<section class="section section-subtle"><div class="container">' +
+    /* 4. ΔΙΑΔΙΚΑΣΙΑ */
+    '<section class="section"><div class="container">' +
     C.sectionHead('Διαδικασία', 'Πώς δουλεύουμε — 5 βήματα',
       'Σε κάθε βήμα ξέρετε τι παίρνετε και τι χρειάζεται από εσάς.', { center: true }) +
     C.processSteps() +
     '</div></section>' +
 
-    /* 6. ΕΡΓΑ — αρχέτυπα, όχι εφευρεμένα case studies */
-    '<section class="section"><div class="container">' +
+    /* 5. ΕΡΓΑ — αρχέτυπα, όχι εφευρεμένα case studies */
+    '<section class="section section-subtle"><div class="container">' +
     C.sectionHead('Έργα', 'Τι είδους έργα φτιάχνουμε',
       'Δεν υπάρχει λίστα λογοτύπων σε αυτή τη σελίδα. Υπάρχουν τα σχήματα προβλήματος ' +
       'που αναλαμβάνω και ο τρόπος που τα λύνω.', { center: true }) +
@@ -108,8 +105,8 @@ function home() {
     '</div></div>' +
     '</div></section>' +
 
-    /* 7. ΔΕΣΜΕΥΣΕΙΣ (ή μαρτυρίες, όταν υπάρξουν) */
-    '<section class="section section-subtle"><div class="container">' +
+    /* 6. ΔΕΣΜΕΥΣΕΙΣ (ή μαρτυρίες, όταν υπάρξουν) */
+    '<section class="section"><div class="container">' +
     C.sectionHead(proof.eyebrow, proof.title,
       'Δεν υπάρχουν ακόμη δημοσιευμένες μαρτυρίες πελατών. Αντί για κριτικές που δεν ' +
       'μπορείτε να επαληθεύσετε, παρακάτω είναι οι δεσμεύσεις που ισχύουν σε κάθε έργο.',
@@ -117,7 +114,7 @@ function home() {
     C.socialProof() +
     '</div></section>' +
 
-    /* 8. ΝΟΥΜΕΡΑ */
+    /* 7. ΝΟΥΜΕΡΑ */
     '<section class="section-sm bg-dark-section"><div class="container">' +
     C.sectionHead('Στην πράξη', 'Τι σημαίνουν αυτά με νούμερα',
       'Κανένα από τα παρακάτω δεν είναι ισχυρισμός για το παρελθόν. Είναι πολιτικές ' +
@@ -126,7 +123,7 @@ function home() {
     C.statsRow() +
     '</div></section>' +
 
-    /* 9. FAQ — χωρίς FAQPage schema· ζει μόνο στο faq.html */
+    /* 8. FAQ — χωρίς FAQPage schema· ζει μόνο στο faq.html */
     '<section class="section"><div class="container">' +
     C.sectionHead('Ερωτήσεις', 'Αυτά που ρωτούν οι περισσότεροι',
       'Οι έξι ερωτήσεις που επανέρχονται σχεδόν σε κάθε πρώτη συζήτηση.', { center: true }) +
@@ -136,7 +133,7 @@ function home() {
     'Δείτε και τις 14 ερωτήσεις' + icon('arrow-right') + '</a></p>' +
     '</div></section>' +
 
-    /* 10. ΑΡΘΡΑ */
+    /* 9. ΑΡΘΡΑ */
     '<section class="section section-subtle"><div class="container">' +
     C.sectionHead('Άρθρα', 'Πρόσφατα άρθρα',
       'Τεχνικά κείμενα γραμμένα για όποιον αποφασίζει, όχι μόνο για developers.',
@@ -147,7 +144,7 @@ function home() {
     'Όλα τα άρθρα' + icon('arrow-right') + '</a></p>' +
     '</div></section>' +
 
-    /* 11. ΤΕΛΙΚΟ CTA */
+    /* 10. ΤΕΛΙΚΟ CTA */
     '<section class="section"><div class="container">' + C.ctaBand(b) + '</div></section>';
 
   return {
