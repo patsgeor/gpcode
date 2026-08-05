@@ -200,7 +200,7 @@ function webDevelopment() {
 function webApplications() {
   const sections =
 
-    '<section class="section"><div class="container">' +
+    '<section class="section section-subtle"><div class="container">' +
     '<h2>Πότε χρειάζεστε εφαρμογή και όχι ιστοσελίδα</h2>' +
     '<p class="lead max-66">Η διαφορά δεν είναι τεχνική, είναι λειτουργική. Μια ' +
     'ιστοσελίδα παρουσιάζει πληροφορία. Μια εφαρμογή εκτελεί δουλειά.</p>' +
@@ -226,7 +226,7 @@ function webApplications() {
     xlink('web-development', 'κατασκευή ιστοσελίδων') + '.</p>' +
     '</div></div></div></div></section>' +
 
-    '<section class="section section-subtle"><div class="container">' +
+    '<section class="section"><div class="container">' +
     C.sectionHead('Προβλήματα', 'Τυπικά προβλήματα που λύνει μια custom εφαρμογή',
       'Αν αναγνωρίζετε δύο ή περισσότερα από τα παρακάτω, το κόστος της σημερινής ' +
       'κατάστασης είναι πιθανότατα μεγαλύτερο από το κόστος της λύσης.') +
@@ -251,7 +251,7 @@ function webApplications() {
     ).join('') +
     '</div></div></section>' +
 
-    '<section class="section"><div class="container">' +
+    '<section class="section section-subtle"><div class="container">' +
     '<h2>Τι μπορεί να κάνει η εφαρμογή σας</h2>' +
     '<div class="row g-3 mt-1">' +
     [
@@ -274,7 +274,7 @@ function webApplications() {
     ).join('') +
     '</div></div></section>' +
 
-    '<section class="section section-subtle"><div class="container">' +
+    '<section class="section"><div class="container">' +
     '<div class="row g-4 align-items-start">' +
     '<div class="col-lg-6">' +
     '<h2>Αρχιτεκτονική: από το Excel σε πραγματικό σύστημα</h2>' +
@@ -315,32 +315,18 @@ function webApplications() {
     C.serviceCards(b, { exclude: ['web-development', 'web-applications'] }) +
     '</div></section>' +
 
+    /* Οι δύο πλευρές («πόσο κοστίζει» / «τι μένει δικό σας») συμπυκνωμένες σε
+       ένα callout αντί για δύο πλήρεις στήλες — ίδια λογική με το WordPress
+       callout στο web-development.html. */
     '<section class="section"><div class="container">' +
-    '<div class="row g-4">' +
-    '<div class="col-lg-6">' +
-    '<h2>Κόστος και τιμολόγηση σε φάσεις</h2>' +
-    '<p>Οι εφαρμογές δεν τιμολογούνται με κατάλογο. Το κόστος εξαρτάται από τον αριθμό ' +
-    'των οθονών, την πολυπλοκότητα των κανόνων και τις διασυνδέσεις.</p>' +
-    '<p>Γι΄ αυτό δουλεύουμε σε φάσεις με ξεχωριστή τιμή η καθεμία: πληρώνετε για ένα ' +
-    'κομμάτι, το βλέπετε σε χρήση, και μετά αποφασίζετε αν συνεχίζουμε. Δεν δεσμεύεστε ' +
-    'σε έναν προϋπολογισμό δώδεκα μηνών βασισμένο σε υποθέσεις.</p>' +
-    '<div class="callout accent">' +
-    '<p>Η πρώτη φάση συνήθως κοστίζει όσο ένα εταιρικό site και παραδίδει τη μία ' +
-    'διαδικασία που σας κοστίζει περισσότερο χρόνο σήμερα.</p></div>' +
-    '</div>' +
-    '<div class="col-lg-6">' +
-    '<h2>Συντήρηση, επεκτάσεις και άδεια χρήσης</h2>' +
-    '<ul class="check-list">' +
-    '<li>Τα δεδομένα της εφαρμογής είναι πάντα δικά σας</li>' +
-    '<li>Η εφαρμογή τρέχει σε υποδομή στο δικό σας όνομα</li>' +
-    '<li>Η συντήρηση συμφωνείται ξεχωριστά και δεν είναι υποχρεωτική</li>' +
-    '<li>Οι επεκτάσεις τιμολογούνται ανά φάση, με προσφορά πριν την έναρξη</li>' +
-    '<li>Η τεκμηρίωση γράφεται καθώς προχωράει το έργο, όχι στο τέλος</li>' +
-    '</ul>' +
-    '<p class="small text-muted-2 mb-0">Ο πηγαίος κώδικας παραμένει πνευματική ' +
-    'ιδιοκτησία του gpcode, με άδεια πλήρους χρήσης της εφαρμογής για εσάς. Πρόσβαση ' +
-    'σε αυτόν από άλλον developer προϋποθέτει ρητή έγγραφη συμφωνία των δύο μερών.</p>' +
-    '</div></div></div></section>';
+    '<div class="callout">' +
+    '<span class="callout-title">Κόστος, συντήρηση και άδεια χρήσης</span>' +
+    '<p>Δουλεύουμε σε φάσεις με ξεχωριστή τιμή η καθεμία — πληρώνετε για ένα κομμάτι, ' +
+    'το βλέπετε σε χρήση, μετά αποφασίζετε αν συνεχίζουμε. Η πρώτη φάση συνήθως κοστίζει ' +
+    'όσο ένα εταιρικό site. Τα δεδομένα της εφαρμογής και η υποδομή είναι πάντα στο δικό ' +
+    'σας όνομα· ο πηγαίος κώδικας παραμένει πνευματική ιδιοκτησία του gpcode, με άδεια ' +
+    'πλήρους χρήσης της εφαρμογής για εσάς.</p>' +
+    '</div></div></section>';
 
   return servicePage('web-applications', sections, {
     eyebrow: 'Web εφαρμογές',
@@ -358,7 +344,7 @@ function webApplications() {
 function dotnetDevelopment() {
   const sections =
 
-    '<section class="section"><div class="container">' +
+    '<section class="section section-subtle"><div class="container">' +
     '<h2>Τι αναλαμβάνω σε .NET</h2>' +
     '<div class="row g-3 mt-1">' +
     [
@@ -381,7 +367,7 @@ function dotnetDevelopment() {
     ).join('') +
     '</div></div></section>' +
 
-    '<section class="section section-subtle"><div class="container">' +
+    '<section class="section"><div class="container">' +
     '<h2>ASP.NET Core: Web API, MVC ή Blazor — πότε το καθένα</h2>' +
     '<p class="lead max-66">Και τα τρία είναι έγκυρες επιλογές. Η λάθος επιλογή δεν ' +
     'φαίνεται στην αρχή· φαίνεται στον έκτο μήνα.</p>' +
@@ -403,7 +389,7 @@ function dotnetDevelopment() {
     ).join('') +
     '</div></div></section>' +
 
-    '<section class="section"><div class="container">' +
+    '<section class="section section-subtle"><div class="container">' +
     '<div class="row g-4">' +
     '<div class="col-lg-7">' +
     '<h2>Αρχιτεκτονικά μοτίβα που χρησιμοποιώ</h2>' +
@@ -460,7 +446,7 @@ function dotnetDevelopment() {
     '</ul></div>' +
     '</div></div></div></section>' +
 
-    '<section class="section section-subtle"><div class="container">' +
+    '<section class="section"><div class="container">' +
     '<div class="row g-4">' +
     '<div class="col-lg-6">' +
     '<h2>Migration από .NET Framework και Web Forms</h2>' +
@@ -511,29 +497,19 @@ function dotnetDevelopment() {
 function angularDevelopment() {
   const sections =
 
+    /* «Πότε ταιριάζει» / «πότε είναι υπερβολή» ήταν δύο πλήρεις στήλες με το
+       ίδιο σχήμα με το WordPress pro/con στο web-development.html — ένα
+       callout αρκεί. */
     '<section class="section"><div class="container">' +
-    '<div class="row g-4">' +
-    '<div class="col-lg-6">' +
-    '<h2>Πότε ταιριάζει το Angular στο έργο σας</h2>' +
-    '<ul class="check-list">' +
-    '<li>Υπάρχει σύνδεση χρήστη και διαφορετικές οθόνες ανά ρόλο</li>' +
-    '<li>Πολλές φόρμες με σύνθετους κανόνες επικύρωσης</li>' +
-    '<li>Δεδομένα που ενημερώνονται χωρίς επαναφόρτωση σελίδας</li>' +
-    '<li>Η εφαρμογή θα μεγαλώσει και χρειάζεται δομή που αντέχει</li>' +
-    '<li>Η ομάδα προτιμά αυστηρή δομή αντί για ελεύθερες επιλογές</li>' +
-    '</ul></div>' +
-    '<div class="col-lg-6">' +
-    '<h2>Και πότε είναι υπερβολή</h2>' +
-    '<ul class="cross-list">' +
-    '<li>Site παρουσίασης με φόρμα επικοινωνίας</li>' +
-    '<li>Λίγες στατικές σελίδες όπου το SEO είναι προτεραιότητα</li>' +
-    '<li>Μικρή εφαρμογή που δεν πρόκειται να επεκταθεί</li>' +
-    '<li>Δεν υπάρχει κανείς να τη συντηρήσει μετά την παράδοση</li>' +
-    '</ul>' +
-    '<p class="small text-muted-2 mt-2 mb-0">Σε αυτές τις περιπτώσεις θα σας προτείνω ' +
-    'κάτι απλούστερο — συνήθως ' + xlink('web-development', 'στατικό site') + ' ή ' +
-    'server-rendered σελίδες. Το λέω πριν το ξεκινήσουμε, όχι μετά.</p>' +
-    '</div></div></div></section>' +
+    '<div class="callout">' +
+    '<span class="callout-title">Πότε ταιριάζει το Angular</span>' +
+    '<p>Όταν υπάρχει σύνδεση χρήστη με διαφορετικές οθόνες ανά ρόλο, πολλές φόρμες με ' +
+    'σύνθετους κανόνες, δεδομένα που ενημερώνονται χωρίς επαναφόρτωση, ή μια εφαρμογή ' +
+    'που θα μεγαλώσει και χρειάζεται δομή που αντέχει. Αν αντίθετα πρόκειται για site ' +
+    'παρουσίασης, λίγες στατικές σελίδες όπου μετράει το SEO, ή κάτι μικρό που δεν θα ' +
+    'επεκταθεί, είναι υπερβολή — θα σας προτείνω κάτι απλούστερο, συνήθως ' +
+    xlink('web-development', 'στατικό site') + '. Το λέω πριν το ξεκινήσουμε, όχι μετά.</p>' +
+    '</div></div></section>' +
 
     '<section class="section section-subtle"><div class="container">' +
     '<h2>Τι χτίζω σε Angular</h2>' +
@@ -749,7 +725,7 @@ function databaseDevelopment() {
 function apiDevelopment() {
   const sections =
 
-    '<section class="section"><div class="container">' +
+    '<section class="section section-subtle"><div class="container">' +
     '<div class="row g-4 align-items-start">' +
     '<div class="col-lg-6">' +
     '<h2>Τι λύνει ένα API στην πράξη</h2>' +
@@ -774,7 +750,7 @@ function apiDevelopment() {
     'sandbox του, όχι ο δικός σας κώδικας.</p>' +
     '</div></div></div></div></section>' +
 
-    '<section class="section section-subtle"><div class="container">' +
+    '<section class="section"><div class="container">' +
     '<h2>REST APIs από το μηδέν</h2>' +
     '<div class="row g-3 mt-1">' +
     [
@@ -797,7 +773,7 @@ function apiDevelopment() {
     ).join('') +
     '</div></div></section>' +
 
-    '<section class="section"><div class="container">' +
+    '<section class="section section-subtle"><div class="container">' +
     '<h2>Διασυνδέσεις με ERP, CRM και υπηρεσίες τρίτων</h2>' +
     '<p class="lead max-66">Παρακάτω περιγράφονται οι <b>τύποι διασύνδεσης</b> που ' +
     'αναλαμβάνω. Η υλοποίηση εξαρτάται κάθε φορά από το τι επιτρέπει ο συγκεκριμένος ' +
@@ -829,7 +805,7 @@ function apiDevelopment() {
     'έλεγχος τιμολογείται ξεχωριστά και σας ανήκει ό,τι κι αν αποφασίσετε μετά.</p>' +
     '</div></div></section>' +
 
-    '<section class="section section-subtle"><div class="container">' +
+    '<section class="section"><div class="container">' +
     '<div class="row g-4">' +
     '<div class="col-lg-6">' +
     '<h2>Όταν το εξωτερικό σύστημα δεν απαντά</h2>' +
@@ -882,7 +858,7 @@ function apiDevelopment() {
 function technicalConsulting() {
   const sections =
 
-    '<section class="section"><div class="container">' +
+    '<section class="section section-subtle"><div class="container">' +
     C.sectionHead('Πότε', 'Πότε χρειάζεστε δεύτερη τεχνική γνώμη',
       'Συνήθως όταν πρόκειται να ξοδέψετε σοβαρό ποσό βασισμένοι σε πληροφορία που δεν ' +
       'μπορείτε να αξιολογήσετε μόνοι σας.') +
@@ -907,7 +883,7 @@ function technicalConsulting() {
     ).join('') +
     '</div></div></section>' +
 
-    '<section class="section section-subtle"><div class="container">' +
+    '<section class="section"><div class="container">' +
     '<div class="row g-4">' +
     '<div class="col-lg-6">' +
     '<h2>Τι παραδίδεται σε ένα technical review</h2>' +
@@ -935,7 +911,7 @@ function technicalConsulting() {
     '</ul></div></div>' +
     '</div></div></section>' +
 
-    '<section class="section"><div class="container">' +
+    '<section class="section section-subtle"><div class="container">' +
     '<div class="row g-4">' +
     '<div class="col-lg-6">' +
     '<h2>Αξιολόγηση προσφορών προμηθευτών</h2>' +
@@ -966,7 +942,7 @@ function technicalConsulting() {
     xlink('database-development', 'έλεγχο και βελτιστοποίηση βάσης') + '.</p></div>' +
     '</div></div></div></section>' +
 
-    '<section class="section section-subtle"><div class="container">' +
+    '<section class="section"><div class="container">' +
     '<div class="row g-4">' +
     '<div class="col-lg-6">' +
     '<h2>Πώς τιμολογείται</h2>' +

@@ -27,7 +27,7 @@ function faq() {
     'κόστος, χρόνος, άδεια χρήσης κώδικα, συντήρηση και τι γίνεται αν κάτι πάει στραβά.</p>' +
     '</div></section>' +
 
-    '<section class="section"><div class="container">' +
+    '<section class="section section-subtle"><div class="container">' +
     '<div class="row g-4">' +
     '<div class="col-lg-8">' + C.faqGrouped() + '</div>' +
     '<div class="col-lg-4">' +

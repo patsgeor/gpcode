@@ -48,7 +48,7 @@ function index() {
     'κοστίζει, τι επιλέγω, τι ρισκάρω. Χωρίς ορολογία που δεν χρειάζεται.</p>' +
     '</div></section>' +
 
-    '<section class="section"><div class="container">' +
+    '<section class="section section-subtle"><div class="container">' +
     '<div class="row g-3">' + D.posts.map((p, i) => C.postCard(b, p, i)).join('') + '</div>' +
 
     '<div class="callout mt-4">' +
