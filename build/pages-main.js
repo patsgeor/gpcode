@@ -105,26 +105,21 @@ function home() {
     '</div></div>' +
     '</div></section>' +
 
-    /* 6. ΔΕΣΜΕΥΣΕΙΣ (ή μαρτυρίες, όταν υπάρξουν) */
-    '<section class="section"><div class="container">' +
+    /* 6. ΔΕΣΜΕΥΣΕΙΣ + ΝΟΥΜΕΡΑ — μία ενότητα εμπιστοσύνης αντί για δύο συνεχόμενες.
+       Και οι δύο απαντούν στο ίδιο ερώτημα («γιατί να σας εμπιστευτώ»), οπότε
+       μοιράζονται μία επικεφαλίδα· τα νούμερα μπαίνουν ως συνέχεια, όχι ξεχωριστό θέμα. */
+    '<section class="section-sm bg-dark-section"><div class="container">' +
     C.sectionHead(proof.eyebrow, proof.title,
       'Δεν υπάρχουν ακόμη δημοσιευμένες μαρτυρίες πελατών. Αντί για κριτικές που δεν ' +
       'μπορείτε να επαληθεύσετε, παρακάτω είναι οι δεσμεύσεις που ισχύουν σε κάθε έργο.',
       { center: true }) +
     C.socialProof() +
-    '</div></section>' +
-
-    /* 7. ΝΟΥΜΕΡΑ */
-    '<section class="section-sm bg-dark-section"><div class="container">' +
-    C.sectionHead('Στην πράξη', 'Τι σημαίνουν αυτά με νούμερα',
-      'Κανένα από τα παρακάτω δεν είναι ισχυρισμός για το παρελθόν. Είναι πολιτικές ' +
-      'που ισχύουν από την πρώτη μέρα ή γεγονότα που μπορείτε να μετρήσετε μόνοι σας.',
-      { center: true }) +
+    '<h3 class="text-center h6 mt-4 mb-3">Τι σημαίνει αυτό με νούμερα</h3>' +
     C.statsRow() +
     '</div></section>' +
 
-    /* 8. FAQ — χωρίς FAQPage schema· ζει μόνο στο faq.html */
-    '<section class="section"><div class="container">' +
+    /* 7. FAQ — χωρίς FAQPage schema· ζει μόνο στο faq.html */
+    '<section class="section section-subtle"><div class="container">' +
     C.sectionHead('Ερωτήσεις', 'Αυτά που ρωτούν οι περισσότεροι',
       'Οι έξι ερωτήσεις που επανέρχονται σχεδόν σε κάθε πρώτη συζήτηση.', { center: true }) +
     C.faqAccordion(homeFaqs) +
@@ -133,18 +128,10 @@ function home() {
     'Δείτε και τις 14 ερωτήσεις' + icon('arrow-right') + '</a></p>' +
     '</div></section>' +
 
-    /* 9. ΑΡΘΡΑ */
-    '<section class="section section-subtle"><div class="container">' +
-    C.sectionHead('Άρθρα', 'Πρόσφατα άρθρα',
-      'Τεχνικά κείμενα γραμμένα για όποιον αποφασίζει, όχι μόνο για developers.',
-      { center: true }) +
-    '<div class="row g-3">' + D.posts.map((p, i) => C.postCard(b, p, i)).join('') + '</div>' +
-    '<p class="text-center mt-3 mb-0">' +
-    '<a class="btn btn-outline-brand" href="' + b + 'blog/index.html">' +
-    'Όλα τα άρθρα' + icon('arrow-right') + '</a></p>' +
-    '</div></section>' +
+    /* Το preview άρθρων αφαιρέθηκε — τα άρθρα παραμένουν 1 κλικ μακριά μέσω
+       του μενού «Άρθρα». Λιγότερη πληροφορία στην αρχική, τίποτα δεν χάνεται. */
 
-    /* 10. ΤΕΛΙΚΟ CTA */
+    /* 8. ΤΕΛΙΚΟ CTA */
     '<section class="section"><div class="container">' + C.ctaBand(b) + '</div></section>';
 
   return {
